@@ -12,7 +12,7 @@ import pytest
 def os_type():
     return platform.system() 
 
-def test_ocr(os_type):
+def test_ocr_response_code(os_type):
     client = TestClient(app)
     testfile = Path(__file__).parent.parent.joinpath('testdata').joinpath('image_with_txt.png')
     files = {"image" : testfile.open("rb")}
