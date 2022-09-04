@@ -3,3 +3,5 @@ uvicorn
 pytesseract
 python-multipart
 aiofiles
+pytest
+pytest-html
